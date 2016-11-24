@@ -30,8 +30,8 @@
 # =============== #
 # Unity generated #
 # =============== #
-Temp/
-Library/
+Game Design 2 v0.1/Temp/
+Game Design 2 v0.1/Library/
  
 # ===================================== #
 # Visual Studio / MonoDevelop generated #
@@ -58,4 +58,3 @@ obj/
 .Trashes
 ehthumbs.db
 Thumbs.db
-Game Design 2 v0.1/Library/shadercompiler-UnityShaderCompiler0.log
