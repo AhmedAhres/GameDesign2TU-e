@@ -45,6 +45,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\CanvaScript.cs" />
      <Compile Include="Assets\Scripts\Dragging.cs" />
      <None Include="Assets\Shader\Outlined_Diffuse.shader" />
      <None Include="Assets\Shader\$self_illuminated_outlined_diffuse_113.shader" />
