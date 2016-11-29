@@ -45,9 +45,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Build.cs" />
-     <Compile Include="Assets\Scripts\CanvaScript.cs" />
-     <Compile Include="Assets\Scripts\Dragging.cs" />
+     <Compile Include="Assets\Scripts\Level1\Build.cs" />
+     <Compile Include="Assets\Scripts\Level1\Build2.cs" />
+     <Compile Include="Assets\Scripts\Level1\Build3.cs" />
+     <Compile Include="Assets\Scripts\Level1\CanvaScript.cs" />
+     <Compile Include="Assets\Scripts\Level1\Dragging.cs" />
      <None Include="Assets\Shader\Outlined_Diffuse.shader" />
      <None Include="Assets\Shader\$self_illuminated_outlined_diffuse_113.shader" />
  <Reference Include="UnityEngine.UI">
