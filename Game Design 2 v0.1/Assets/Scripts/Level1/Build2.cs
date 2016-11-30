@@ -24,7 +24,6 @@ public class Build2 : MonoBehaviour {
 	public void OnTriggerEnter2D(Collider2D other){
 		if (other.gameObject.name == "Bar1") //&& build.bottomWheelDone == true 
 		{
-			itself.SetActive (false);
 			audio.PlayOneShot (inside, 0.7f);
 			bar1.SetActive (false);
 			bottomBothBar.SetActive (true);

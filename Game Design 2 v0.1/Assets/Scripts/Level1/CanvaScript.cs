@@ -17,7 +17,7 @@ public class CanvaScript : MonoBehaviour {
 		ob2.GetComponent<BoxCollider2D>().enabled = false;
 		ob3.GetComponent<CircleCollider2D>().enabled = false;
 		ob4.GetComponent<BoxCollider2D>().enabled = false;
-		ob5.GetComponent<BoxCollider2D>().enabled = false;
+		ob5.GetComponent<PolygonCollider2D>().enabled = false;
 		ob8.GetComponent<PolygonCollider2D>().enabled = false;
 		StartCoroutine(Canvas());
 	}
@@ -33,7 +33,7 @@ public class CanvaScript : MonoBehaviour {
 		ob2.GetComponent<BoxCollider2D>().enabled = true;
 		ob3.GetComponent<CircleCollider2D>().enabled = true;
 		ob4.GetComponent<BoxCollider2D>().enabled = true;
-		ob5.GetComponent<BoxCollider2D>().enabled = true;
+		ob5.GetComponent<PolygonCollider2D>().enabled = true;
 		ob8.GetComponent<PolygonCollider2D>().enabled = true;
 	}
 }
