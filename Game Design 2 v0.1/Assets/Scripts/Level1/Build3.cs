@@ -28,8 +28,8 @@ public class Build3 : MonoBehaviour {
 
 	void Update(){
 		if(itself.gameObject.activeInHierarchy == true){
-			Destroy (before);
-			Destroy (bbefore);
+			//Destroy (before);
+			//Destroy (bbefore);
 		}
 	}
 	// Update is called once per frame
