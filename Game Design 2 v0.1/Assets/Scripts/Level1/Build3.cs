@@ -28,8 +28,8 @@ public class Build3 : MonoBehaviour {
 
 	void Update(){
 		if(itself.gameObject.activeInHierarchy == true){
-			Destroy (before);
-			Destroy (bbefore);
+			//Destroy (before);
+			//Destroy (bbefore);
 		}
 	}
 	// Update is called once per frame
@@ -39,29 +39,34 @@ public class Build3 : MonoBehaviour {
 		if (other.gameObject.name == "bar-right") 
 		{
 			if (leftIn == false) {
-				audio.PlayOneShot (inside, 0.5f);
+				audio.PlayOneShot (inside, 0.6f);
 				barRight.SetActive (false);
 				bottomBothBarRight.SetActive (true);
 				rightIn = true;
 			} else {
-				audio.PlayOneShot (inside, 0.5f);
+				audio.PlayOneShot (inside, 0.6f);
 				barRight.SetActive (false);
 				bottomBothBarRL.SetActive (true);
+				itself.GetComponent<BoxCollider2D> ().enabled = false;
 			}
 		} 
 		if (other.gameObject.name == "bar-left") 
 		{
 			if (bottomBothBarRight.gameObject.activeInHierarchy == false) {
-				audio.PlayOneShot (inside, 0.5f);
+				audio.PlayOneShot (inside, 0.6f);
 				barLeft.SetActive (false);
 				bottomBothBarLeft.SetActive (true);
 				leftIn = true;
 			}
 			if(bottomBothBarRight.gameObject.activeInHierarchy == true) {
-				audio.PlayOneShot (inside, 0.5f);
+				audio.PlayOneShot (inside, 0.6f);
 				barLeft.SetActive (false);
 				bottomBothBarRL.SetActive (true);
+				itself.GetComponent<BoxCollider2D> ().enabled = false;
 			}
 		} 
+		//else if (other.gameObject != barRight && other.gameObject != barLeft) {
+		//	audio2.PlayOneShot (error, 0.4f);
+		//}
 	}
 }
