@@ -24,15 +24,16 @@ public class Build : MonoBehaviour {
 
 		if (other.gameObject.tag == "wheel") 
 		{
-			audio.PlayOneShot (inside, 0.5f);
+			audio.PlayOneShot (inside, 0.6f);
 			wheel.SetActive (false);
 			bottomWheelBoth.SetActive (true);
 			bottomWheelBoth.GetComponent<BoxCollider2D>().enabled = true;
+			itself.GetComponent<SpriteRenderer> ().enabled = false;
 			itself.GetComponent<BoxCollider2D>().enabled = false;
 			wheel.GetComponent<CircleCollider2D>().enabled = false;
 		}
 		if (other.gameObject.tag != null && other.gameObject.tag != "wheel") {
-			audio2.PlayOneShot (error, 0.7f);
+			audio2.PlayOneShot (error, 0.4f);
 		}
 
 	}
