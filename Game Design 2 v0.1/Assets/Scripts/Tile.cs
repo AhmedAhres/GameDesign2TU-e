@@ -34,14 +34,14 @@ public class Tile : MonoBehaviour
 	public void PickUp()
 	{
 		renderer.sprite = startSprite;
-		transform.localScale = new Vector3(1.1f, 1.1f, 1.1f);
-		gameObject.GetComponent<SpriteRenderer>().sortingOrder = 2;
+		transform.localScale = transform.localScale * 1.1f;
+		gameObject.GetComponent<SpriteRenderer>().sortingOrder += 5;
 	}
 
 	public void Drop()
 	{
-		transform.localScale = new Vector3(1, 1, 1);
-		gameObject.GetComponent<SpriteRenderer>().sortingOrder = 1;
+		transform.localScale = transform.localScale / 1.1f;
+		gameObject.GetComponent<SpriteRenderer>().sortingOrder -= 5;
 
 		Vector2 newPosition;
 		if (touchingTile == null) {

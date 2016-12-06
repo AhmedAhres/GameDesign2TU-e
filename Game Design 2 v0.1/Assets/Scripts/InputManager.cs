@@ -15,6 +15,7 @@ public class InputManager : MonoBehaviour
 		} 
 		else
 		{
+			CheckFinished();
 			if (draggingItem)
 				DropItem();
 		}
@@ -51,6 +52,17 @@ public class InputManager : MonoBehaviour
 		}
 	}
 
+	private void CheckFinished()
+	{
+		foreach (GameObject gameObject in GameObject.FindGameObjectsWithTag("Tile")) {
+			if (gameObject.transform.parent == null) {
+				return;
+			}
+		}
+		Debug.Log("Finished");
+		return;
+	}
+
 	private bool HasInput
 	{
 		get
@@ -63,7 +75,6 @@ public class InputManager : MonoBehaviour
 	void DropItem()
 	{
 		draggingItem = false;
-		draggedObject.transform.localScale = new Vector3(1, 1, 1);
 		draggedObject.GetComponent<Tile>().Drop();
 	}
 }
