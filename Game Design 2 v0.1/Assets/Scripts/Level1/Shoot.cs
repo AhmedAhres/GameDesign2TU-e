@@ -11,6 +11,7 @@ public class Shoot : MonoBehaviour {
 	public GameObject tre1;
 	public GameObject tre2;
 	public GameObject tre3;
+	public Transform canvas;
 	int pressed = 0;
 	AudioSource src;
 	public AudioClip snowHit;
@@ -74,5 +75,7 @@ public class Shoot : MonoBehaviour {
 		snowman3.SetActive (false);
 		snowman4.SetActive (true);
 		pressed = 3;
+		yield return new WaitForSeconds (0.5f);
+		canvas.gameObject.SetActive (true);
 	}
 }
