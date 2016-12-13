@@ -7,7 +7,12 @@ public class InputManager : MonoBehaviour
 	public bool draggingItem = false;
 	private GameObject draggedObject;
 	private Vector2 touchOffset;
-	Scene scene = SceneManager.GetActiveScene();
+	Scene scene;
+
+	void Start()
+	{
+		scene = SceneManager.GetActiveScene();
+	}
 
 	void Update()
 	{
@@ -62,14 +67,27 @@ public class InputManager : MonoBehaviour
 			}
 		}
 		if (scene.name == "Level1") {
-			SceneManager.LoadScene ("Level1Mini");
+			StartCoroutine (lev1 ());
 		}
 		if (scene.name == "Level2") {
-			SceneManager.LoadScene ("Level2Mini");
+			StartCoroutine (lev2 ());
 		}
 		if (scene.name == "Level3") {
-			SceneManager.LoadScene ("Level3Mini");
+			StartCoroutine (lev3());
 		}
+	}
+
+	IEnumerator lev1(){
+		yield return new WaitForSeconds (0.7f);
+		SceneManager.LoadScene ("Level1Mini");
+	}
+	IEnumerator lev2(){
+		yield return new WaitForSeconds (0.7f);
+		SceneManager.LoadScene ("Circuit");
+	}
+	IEnumerator lev3(){
+		yield return new WaitForSeconds (0.7f);
+		SceneManager.LoadScene ("Level3Mini");
 	}
 
 	private bool HasInput

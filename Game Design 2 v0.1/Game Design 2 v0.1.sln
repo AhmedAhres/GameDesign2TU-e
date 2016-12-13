@@ -1,9 +1,9 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
-Project("{EC27D669-9CAB-94DF-1A1D-3DE70574B4DD}") = "Game Design 2 v0.1", "Assembly-CSharp.csproj", "{C31B5519-4E7F-08A4-0EB3-A3F801A85E84}"
+Project("{EC27D669-9CAB-94DF-1A1D-3DE70574B4DD}") = "Game Design 2 v0.1", "Assembly-CSharp-firstpass.csproj", "{CB2AE8CB-FDFD-3061-17C1-09FB8751A0FF}"
 EndProject
-Project("{EC27D669-9CAB-94DF-1A1D-3DE70574B4DD}") = "Game Design 2 v0.1", "Assembly-CSharp-Editor.csproj", "{B0CE4048-836C-C799-4710-7533516977A6}"
+Project("{EC27D669-9CAB-94DF-1A1D-3DE70574B4DD}") = "Game Design 2 v0.1", "Assembly-CSharp.csproj", "{C31B5519-4E7F-08A4-0EB3-A3F801A85E84}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,14 +11,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CB2AE8CB-FDFD-3061-17C1-09FB8751A0FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB2AE8CB-FDFD-3061-17C1-09FB8751A0FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB2AE8CB-FDFD-3061-17C1-09FB8751A0FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB2AE8CB-FDFD-3061-17C1-09FB8751A0FF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C31B5519-4E7F-08A4-0EB3-A3F801A85E84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C31B5519-4E7F-08A4-0EB3-A3F801A85E84}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C31B5519-4E7F-08A4-0EB3-A3F801A85E84}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C31B5519-4E7F-08A4-0EB3-A3F801A85E84}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B0CE4048-836C-C799-4710-7533516977A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B0CE4048-836C-C799-4710-7533516977A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B0CE4048-836C-C799-4710-7533516977A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B0CE4048-836C-C799-4710-7533516977A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

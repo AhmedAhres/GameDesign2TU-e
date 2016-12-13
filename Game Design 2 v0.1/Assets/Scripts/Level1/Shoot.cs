@@ -8,9 +8,14 @@ public class Shoot : MonoBehaviour {
 	public GameObject snowman3;
 	public GameObject snowman4;
 	public GameObject tre0;
+	public GameObject tre01;
+	public GameObject tre02;
 	public GameObject tre1;
 	public GameObject tre2;
 	public GameObject tre3;
+	public GameObject sphere;
+	public GameObject sphere01;
+	public GameObject sphere02;
 	public Transform can;
 	public Transform canvas;
 	int pressed = 0;
@@ -18,6 +23,9 @@ public class Shoot : MonoBehaviour {
 	AudioSource src2;
 	public AudioClip snowHit;
 	public AudioClip throw1;
+	//public float speed = 5.0;
+	//public float turnSpeed = 1.5;
+	//Vector3 target;
 
 	// Use this for initialization
 	void Start () {
@@ -30,17 +38,20 @@ public class Shoot : MonoBehaviour {
 		if (can.gameObject.activeInHierarchy == false) {
 			if (Input.GetKeyDown ("space")) {
 				if (pressed == 0) {
+					sphere.AddComponent<MoveSample> ();
 					tre0.SetActive (false);
 					tre1.SetActive (true);
 					StartCoroutine (Snowman1 ());
 				}
 				if (pressed == 1) {
-					tre0.SetActive (false);
+					sphere01.AddComponent<MoveSample1> ();
+					tre01.SetActive (false);
 					tre2.SetActive (true);
 					StartCoroutine (Snowman2 ());
 				}
 				if (pressed == 2) {
-					tre0.SetActive (false);
+					sphere02.AddComponent<MoveSample2> ();
+					tre02.SetActive (false);
 					tre3.SetActive (true);
 					StartCoroutine (Snowman3 ());
 				}
@@ -52,7 +63,7 @@ public class Shoot : MonoBehaviour {
 	IEnumerator Snowman1 () {
 		yield return new WaitForSeconds (0.2f);
 		tre1.SetActive (false);
-		tre0.SetActive (true);
+		tre01.SetActive (true);
 		src2.PlayOneShot(throw1,0.4f);
 		yield return new WaitForSeconds (0.2f);
 		src.PlayOneShot (snowHit, 1f);
@@ -64,7 +75,7 @@ public class Shoot : MonoBehaviour {
 	IEnumerator Snowman2 () {
 		yield return new WaitForSeconds (0.2f);
 		tre2.SetActive (false);
-		tre0.SetActive (true);
+		tre02.SetActive (true);
 		src2.PlayOneShot(throw1,0.4f);
 		yield return new WaitForSeconds (0.2f);
 		src.PlayOneShot (snowHit, 1f);
@@ -75,7 +86,7 @@ public class Shoot : MonoBehaviour {
 	IEnumerator Snowman3 () {
 		yield return new WaitForSeconds (0.2f);
 		tre3.SetActive (false);
-		tre0.SetActive (true);
+		tre01.SetActive (true);
 		src2.PlayOneShot(throw1,0.4f);
 		yield return new WaitForSeconds (0.2f);
 		src.PlayOneShot (snowHit, 1f);
@@ -85,4 +96,6 @@ public class Shoot : MonoBehaviour {
 		yield return new WaitForSeconds (0.5f);
 		canvas.gameObject.SetActive (true);
 	}
+
+
 }
