@@ -5,8 +5,6 @@ Project("{EC27D669-9CAB-94DF-1A1D-3DE70574B4DD}") = "Game Design 2 v0.1", "Assem
 EndProject
 Project("{EC27D669-9CAB-94DF-1A1D-3DE70574B4DD}") = "Game Design 2 v0.1", "Assembly-CSharp-Editor.csproj", "{B0CE4048-836C-C799-4710-7533516977A6}"
 EndProject
-Project("{EC27D669-9CAB-94DF-1A1D-3DE70574B4DD}") = "Game Design 2 v0.1", "Assembly-UnityScript.unityproj", "{3C9D5EB1-BCE5-8B3B-9F7C-584392814D1A}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,10 +19,6 @@ Global
 		{B0CE4048-836C-C799-4710-7533516977A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0CE4048-836C-C799-4710-7533516977A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0CE4048-836C-C799-4710-7533516977A6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3C9D5EB1-BCE5-8B3B-9F7C-584392814D1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3C9D5EB1-BCE5-8B3B-9F7C-584392814D1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3C9D5EB1-BCE5-8B3B-9F7C-584392814D1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3C9D5EB1-BCE5-8B3B-9F7C-584392814D1A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

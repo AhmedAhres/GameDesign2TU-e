@@ -11,6 +11,7 @@ public class Shoot : MonoBehaviour {
 	public GameObject tre1;
 	public GameObject tre2;
 	public GameObject tre3;
+	public Transform can;
 	public Transform canvas;
 	int pressed = 0;
 	AudioSource src;
@@ -26,25 +27,25 @@ public class Shoot : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
-		if (Input.GetKeyDown ("space")) {
-			if (pressed == 0) {
-				tre0.SetActive (false);
-				tre1.SetActive (true);
-				StartCoroutine (Snowman1 ());
-			}
-			if (pressed == 1) {
-				tre0.SetActive (false);
-				tre2.SetActive (true);
-				StartCoroutine (Snowman2 ());
-			}
-			if (pressed == 2) {
-				tre0.SetActive (false);
-				tre3.SetActive (true);
-				StartCoroutine (Snowman3 ());
+		if (can.gameObject.activeInHierarchy == false) {
+			if (Input.GetKeyDown ("space")) {
+				if (pressed == 0) {
+					tre0.SetActive (false);
+					tre1.SetActive (true);
+					StartCoroutine (Snowman1 ());
+				}
+				if (pressed == 1) {
+					tre0.SetActive (false);
+					tre2.SetActive (true);
+					StartCoroutine (Snowman2 ());
+				}
+				if (pressed == 2) {
+					tre0.SetActive (false);
+					tre3.SetActive (true);
+					StartCoroutine (Snowman3 ());
+				}
 			}
 		}
-
 			
 
 	}

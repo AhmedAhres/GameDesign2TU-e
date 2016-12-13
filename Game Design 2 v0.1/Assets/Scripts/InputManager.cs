@@ -1,11 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class InputManager : MonoBehaviour
 {
 	public bool draggingItem = false;
 	private GameObject draggedObject;
 	private Vector2 touchOffset;
+	Scene scene = SceneManager.GetActiveScene();
 
 	void Update()
 	{
@@ -59,8 +61,15 @@ public class InputManager : MonoBehaviour
 				return;
 			}
 		}
-		Debug.Log("Finished");
-		return;
+		if (scene.name == "Level1") {
+			SceneManager.LoadScene ("Level1Mini");
+		}
+		if (scene.name == "Level2") {
+			SceneManager.LoadScene ("Level2Mini");
+		}
+		if (scene.name == "Level3") {
+			SceneManager.LoadScene ("Level3Mini");
+		}
 	}
 
 	private bool HasInput
