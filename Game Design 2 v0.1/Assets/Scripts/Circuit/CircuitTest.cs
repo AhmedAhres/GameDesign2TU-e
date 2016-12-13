@@ -40,7 +40,7 @@ public class CircuitTest : MonoBehaviour {
 
 
 
-				if (currentlyClicked.name == "Background" || currentlyClicked == lastClicked) {
+				if (currentlyClicked.name == "Background" || currentlyClicked == lastClicked || currentlyClicked.name == "Help") {
 					currentlyClicked = null;
 
 				
