@@ -57,6 +57,11 @@
      <Compile Include="Assets\PyroParticles\Prefab\Script\SingleLineAttribute.cs" />
      <Compile Include="Assets\Scripts\CanvaScript.cs" />
      <Compile Include="Assets\Scripts\CanvaScriptL3.cs" />
+     <Compile Include="Assets\Scripts\Circuit\CircuitLVLA.cs" />
+     <Compile Include="Assets\Scripts\Circuit\CircuitTest.cs" />
+     <Compile Include="Assets\Scripts\Circuit\CreateCable.cs" />
+     <Compile Include="Assets\Scripts\Circuit\ShowHint.cs" />
+     <Compile Include="Assets\Scripts\Circuit\ShowItemName.cs" />
      <Compile Include="Assets\Scripts\InputManager.cs" />
      <Compile Include="Assets\Scripts\Level1\CanvasShoot.cs" />
      <Compile Include="Assets\Scripts\Level1\Shoot.cs" />
