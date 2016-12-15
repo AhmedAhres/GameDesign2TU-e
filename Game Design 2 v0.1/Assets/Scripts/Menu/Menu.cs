@@ -52,4 +52,20 @@ public class Menu : MonoBehaviour {
 	void Update () {
 		
 	}
+
+	public void goLevel1(){
+		Invoke ("changeLevel", 1.0f);
+	}
+
+	void changeLevel(){
+		Application.LoadLevel("Level1");
+	}
+
+	public void exitGame(){
+		Invoke ("exit", 1.0f);
+	}
+
+	void exit(){
+		Application.Quit ();
+	}
 }
