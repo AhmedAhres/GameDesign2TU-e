@@ -7,6 +7,7 @@ public class InputManager : MonoBehaviour
 	public bool draggingItem = false;
 	private GameObject draggedObject;
 	private Vector2 touchOffset;
+	public GameObject electronicsCan;
 	Scene scene;
 
 	void Start()
@@ -83,12 +84,13 @@ public class InputManager : MonoBehaviour
 	}
 	IEnumerator lev2(){
 		yield return new WaitForSeconds (0.7f);
-		SceneManager.LoadScene ("Circuit");
+		electronicsCan.gameObject.SetActive (true);
 	}
 	IEnumerator lev3(){
 		yield return new WaitForSeconds (0.7f);
 		SceneManager.LoadScene ("Level3Mini");
 	}
+		
 
 	private bool HasInput
 	{
