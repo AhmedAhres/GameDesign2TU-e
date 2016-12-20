@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Fonts\Script\scriptTexttest.cs" />
+     <Compile Include="Assets\Scripts\Achievements.cs" />
      <Compile Include="Assets\Scripts\AnimTest.cs" />
      <Compile Include="Assets\Scripts\CanvaScript.cs" />
      <Compile Include="Assets\Scripts\CanvaScriptL3.cs" />

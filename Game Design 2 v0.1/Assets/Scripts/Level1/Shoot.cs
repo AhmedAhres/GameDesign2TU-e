@@ -31,6 +31,8 @@ public class Shoot : MonoBehaviour {
 	void Start () {
 		src = GetComponent<AudioSource> ();
 		src2 = GetComponent<AudioSource> ();
+		sphere01.SetActive (false);
+		sphere02.SetActive (false);
 	}
 	
 	// Update is called once per frame
@@ -64,8 +66,10 @@ public class Shoot : MonoBehaviour {
 		yield return new WaitForSeconds (0.2f);
 		tre1.SetActive (false);
 		tre01.SetActive (true);
+		sphere01.SetActive (true);
 		src2.PlayOneShot(throw1,0.4f);
 		yield return new WaitForSeconds (0.2f);
+		sphere.SetActive (false);
 		src.PlayOneShot (snowHit, 1f);
 		snowman1.SetActive (false);
 		snowman2.SetActive (true);
@@ -76,9 +80,11 @@ public class Shoot : MonoBehaviour {
 		yield return new WaitForSeconds (0.2f);
 		tre2.SetActive (false);
 		tre02.SetActive (true);
+		sphere02.SetActive (true);
 		src2.PlayOneShot(throw1,0.4f);
 		yield return new WaitForSeconds (0.2f);
 		src.PlayOneShot (snowHit, 1f);
+		sphere01.SetActive (false);
 		snowman2.SetActive (false);
 		snowman3.SetActive (true);
 		pressed = 2;
@@ -89,11 +95,13 @@ public class Shoot : MonoBehaviour {
 		tre01.SetActive (true);
 		src2.PlayOneShot(throw1,0.4f);
 		yield return new WaitForSeconds (0.2f);
+		sphere02.SetActive (false);
 		src.PlayOneShot (snowHit, 1f);
+
 		snowman3.SetActive (false);
 		snowman4.SetActive (true);
 		pressed = 3;
-		yield return new WaitForSeconds (0.5f);
+		yield return new WaitForSeconds (0.7f);
 		canvas.gameObject.SetActive (true);
 	}
 

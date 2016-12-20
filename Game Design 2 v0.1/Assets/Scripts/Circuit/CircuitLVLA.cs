@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CircuitLVLA : MonoBehaviour {
 
@@ -50,5 +51,10 @@ public class CircuitLVLA : MonoBehaviour {
 		for (int i = 0; i < Leds.Length; i++) {
 			Leds [i].SetActive (true);
 		}
+		Invoke ("nextLevel", 2.0f);
+	}
+	void nextLevel(){
+		SceneManager.LoadScene ("Level3");
+
 	}
 }
