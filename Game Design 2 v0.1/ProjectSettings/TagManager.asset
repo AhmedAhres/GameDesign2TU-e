@@ -33,6 +33,8 @@ TagManager:
   - LegLeft
   - ArmLeft
   - Body
+  - 2Check
+  - 2Cross
   layers:
   - Default
   - TransparentFX

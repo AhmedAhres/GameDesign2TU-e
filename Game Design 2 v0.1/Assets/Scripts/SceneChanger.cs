@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class SceneChanger : MonoBehaviour {
 
+	public GameObject can1;
+	public GameObject end;
 	// Use this for initialization
 	void Start () {
 		
@@ -17,6 +19,15 @@ public class SceneChanger : MonoBehaviour {
 
 	public void Lev3(){
 		StartCoroutine (goToLev3 ());
+	}
+
+	public void finish(){
+		StartCoroutine (fin ());
+	}
+
+	IEnumerator fin(){
+		yield return new WaitForSeconds (0.7f);
+		SceneManager.LoadScene ("Menu");
 	}
 
 	public void Advan(){
@@ -37,6 +48,11 @@ public class SceneChanger : MonoBehaviour {
 	IEnumerator Advanced(){
 		yield return new WaitForSeconds (0.7f);
 		SceneManager.LoadScene ("Circuit2");
+	}
+
+	public void ending(){
+		can1.gameObject.SetActive (false);
+		end.gameObject.SetActive (true);
 	}
 }
 

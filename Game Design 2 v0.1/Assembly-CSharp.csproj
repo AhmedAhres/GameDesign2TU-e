@@ -65,6 +65,7 @@
      <Compile Include="Assets\Scripts\Level1\Shoot.cs" />
      <Compile Include="Assets\Scripts\Level3\Fly.cs" />
      <Compile Include="Assets\Scripts\Level3\Fly2.cs" />
+     <Compile Include="Assets\Scripts\Level3\Path.cs" />
      <Compile Include="Assets\Scripts\Menu\Menu.cs" />
      <Compile Include="Assets\Scripts\Pause.cs" />
      <Compile Include="Assets\Scripts\SceneChanger.cs" />

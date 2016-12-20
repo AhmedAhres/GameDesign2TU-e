@@ -10,8 +10,8 @@ public class InputManager : MonoBehaviour
 	public GameObject electronicsCan;
 	public GameObject oneCheck;
 	public GameObject oneCross;
-	public GameObject twoCheck;
-	public GameObject twoCross;
+	GameObject twoCheck;
+	GameObject twoCross;
 	public GameObject threeCheck;
 	public GameObject threeCross;
 	public GameObject fourCheck;
@@ -28,6 +28,8 @@ public class InputManager : MonoBehaviour
 
 	void Start()
 	{
+		twoCheck = GameObject.Find("2Check");
+		twoCross = GameObject.Find("2Cross");
 		scene = SceneManager.GetActiveScene();
 	}
 
@@ -97,12 +99,18 @@ public class InputManager : MonoBehaviour
 			lev2Time = Time.timeSinceLevelLoad;
 			if (lev2Time <= 60)
 				twoCheck.gameObject.SetActive (true);
-		} else {
-			twoCross.gameObject.SetActive (true);
+			else {
+				twoCross.gameObject.SetActive (true);
+			}
 		}
 		if (scene.name == "Level3") {
 			StartCoroutine (lev3());
 			lev3Time = Time.timeSinceLevelLoad;
+			if (lev3Time <= 60)
+				threeCheck.gameObject.SetActive (true);
+			else {
+				threeCross.gameObject.SetActive (true);
+			}
 		}
 	}
 	
