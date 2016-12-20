@@ -8,6 +8,18 @@ public class InputManager : MonoBehaviour
 	private GameObject draggedObject;
 	private Vector2 touchOffset;
 	public GameObject electronicsCan;
+	public GameObject oneCheck;
+	public GameObject oneCross;
+	public GameObject twoCheck;
+	public GameObject twoCross;
+	public GameObject threeCheck;
+	public GameObject threeCross;
+	public GameObject fourCheck;
+	public GameObject fourCross;
+	public GameObject fiveCheck;
+	public GameObject fiveCross;
+	public GameObject sixCheck;
+	public GameObject sixCross;
 	Scene scene;
 	float lev1Time;
 	float lev2Time;
@@ -74,16 +86,26 @@ public class InputManager : MonoBehaviour
 		if (scene.name == "Level1") {
 			StartCoroutine (lev1 ());
 			lev1Time = Time.timeSinceLevelLoad;
+			if (lev1Time <= 25f) {
+				oneCheck.gameObject.SetActive (true);
+			} else {
+				oneCross.gameObject.SetActive (true);
+			}
 		}
 		if (scene.name == "Level2") {
 			StartCoroutine (lev2 ());
 			lev2Time = Time.timeSinceLevelLoad;
+			if (lev2Time <= 60)
+				twoCheck.gameObject.SetActive (true);
+		} else {
+			twoCross.gameObject.SetActive (true);
 		}
 		if (scene.name == "Level3") {
 			StartCoroutine (lev3());
 			lev3Time = Time.timeSinceLevelLoad;
 		}
 	}
+	
 
 	IEnumerator lev1(){
 		yield return new WaitForSeconds (0.7f);

@@ -21,3 +21,5 @@ EditorBuildSettings:
     path: Assets/Scenes/Circuit.unity
   - enabled: 1
     path: Assets/Scenes/Circuit2.unity
+  - enabled: 1
+    path: Assets/Scenes/Achievements.unity
