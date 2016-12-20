@@ -9,6 +9,10 @@ public class InputManager : MonoBehaviour
 	private Vector2 touchOffset;
 	public GameObject electronicsCan;
 	Scene scene;
+	float lev1Time;
+	float lev2Time;
+	float elecTime;
+	float lev3Time;
 
 	void Start()
 	{
@@ -69,12 +73,15 @@ public class InputManager : MonoBehaviour
 		}
 		if (scene.name == "Level1") {
 			StartCoroutine (lev1 ());
+			lev1Time = Time.timeSinceLevelLoad;
 		}
 		if (scene.name == "Level2") {
 			StartCoroutine (lev2 ());
+			lev2Time = Time.timeSinceLevelLoad;
 		}
 		if (scene.name == "Level3") {
 			StartCoroutine (lev3());
+			lev3Time = Time.timeSinceLevelLoad;
 		}
 	}
 
