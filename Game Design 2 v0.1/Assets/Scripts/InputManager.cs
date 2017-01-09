@@ -9,7 +9,7 @@ public class InputManager : MonoBehaviour
 	private Vector2 touchOffset;
 	Scene scene;
 	public GameObject electronicsCan;
-	private GameObject achievements;
+	public GameObject achievements;
 	/*public GameObject oneCheck;
 	public GameObject oneCross;
 	public GameObject twoCheck;
@@ -121,6 +121,7 @@ public class InputManager : MonoBehaviour
 	
 	private void RobotFinished()
 	{
+		achievements.SendMessage("Robot");
 		StartCoroutine(achiev());
 	}
 

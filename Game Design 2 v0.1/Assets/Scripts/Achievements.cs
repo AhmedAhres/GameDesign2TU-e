@@ -42,14 +42,11 @@ class Achievements : MonoBehaviour {
 			fourCross.gameObject.SetActive (false);
 			threeCheck.gameObject.SetActive (true);
 			elecTime = Time.timeSinceLevelLoad;
-			if (elecTime <= 60f) {
+			if (elecTime <= 45f) {
 				fourCheck.gameObject.SetActive (true);
 			} 
 
 		}
-
-
-
 
 		if (scene.name == "Level1") {
 			
@@ -79,5 +76,10 @@ class Achievements : MonoBehaviour {
 			}
 		}
 
+	}
+
+	void Robot() {
+		sixCross.gameObject.SetActive(false);
+		sixCheck.gameObject.SetActive(true);
 	}
 }

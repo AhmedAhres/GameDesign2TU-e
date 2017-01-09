@@ -9,10 +9,12 @@ public class CircuitLVLB : MonoBehaviour {
 	public GameObject[] Leds;
 	public bool[] check;
 	public GameObject goodJob;
+	public GameObject achievements;
 	public bool[] reference1;
 
 	void Start(){
 		check = new bool[playCables.Length];
+		achievements = GameObject.Find ("AchievementsCan");
 	}
 	// Update is called once per frame
 	void Update () {
@@ -37,6 +39,7 @@ public class CircuitLVLB : MonoBehaviour {
 	}
 
 	void done(){
+		achievements.SendMessage ("Finished");
 		goodJob.SetActive (true);
 		for (int i = 0; i < Leds.Length; i++) {
 			Leds [i].SetActive (true);

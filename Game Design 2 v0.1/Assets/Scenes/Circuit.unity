@@ -352,6 +352,7 @@ MonoBehaviour:
   - {fileID: 13983813}
   check: 
   goodJob: {fileID: 1380403998}
+  achievements: {fileID: 0}
   reference1: 010001010001010001010001
   reference2: 010101010000000100010101
 --- !u!114 &56169780
