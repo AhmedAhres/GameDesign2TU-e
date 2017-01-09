@@ -9,6 +9,7 @@ public class InputManager : MonoBehaviour
 	private Vector2 touchOffset;
 	Scene scene;
 	public GameObject electronicsCan;
+	private GameObject achievements;
 	/*public GameObject oneCheck;
 	public GameObject oneCross;
 	public GameObject twoCheck;
@@ -32,6 +33,7 @@ public class InputManager : MonoBehaviour
 		//twoCheck = GameObject.Find("2Check");
 		//twoCross = GameObject.Find("2Cross");
 		scene = SceneManager.GetActiveScene();
+		achievements = GameObject.Find ("AchievementsCan");
 	}
 
 	void Update()
@@ -87,6 +89,7 @@ public class InputManager : MonoBehaviour
 				return;
 			}
 		}
+		achievements.SendMessage ("Finished");
 		if (scene.name == "Level1") {
 			//lev1Time = Time.timeSinceLevelLoad;
 			/*if (lev1Time <= 25f) {

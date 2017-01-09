@@ -969,7 +969,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 'Would you like to build everything you want and do crazy things with it?
-    Would you like to build a rocket that goes to the moon?
+    Would you like to be able to build a rocket that goes to space?
 
     The Mechanical Engineering department at the TU/e offers you the opportunity to
     do so. Not only you will be able to build whatever you want after your bachelor,
@@ -1891,16 +1891,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   draggingItem: 0
   electronicsCan: {fileID: 0}
-  oneCheck: {fileID: 0}
-  oneCross: {fileID: 0}
-  threeCheck: {fileID: 0}
-  threeCross: {fileID: 0}
-  fourCheck: {fileID: 0}
-  fourCross: {fileID: 0}
-  fiveCheck: {fileID: 0}
-  fiveCross: {fileID: 0}
-  sixCheck: {fileID: 0}
-  sixCross: {fileID: 0}
 --- !u!114 &1865645876
 MonoBehaviour:
   m_ObjectHideFlags: 0
