@@ -2488,18 +2488,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e266f3cda8c84769b1cd8c5239baa15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  oneCheck: {fileID: 0}
-  oneCross: {fileID: 0}
-  twoCheck: {fileID: 0}
-  twoCross: {fileID: 0}
+  oneCheck: {fileID: 2015259402}
+  oneCross: {fileID: 779020474}
+  twoCheck: {fileID: 173606756}
+  twoCross: {fileID: 952209146}
   threeCheck: {fileID: 1894041693}
   threeCross: {fileID: 1643691368}
-  fourCheck: {fileID: 0}
-  fourCross: {fileID: 0}
-  fiveCheck: {fileID: 0}
-  fiveCross: {fileID: 0}
-  sixCheck: {fileID: 0}
-  sixCross: {fileID: 0}
+  fourCheck: {fileID: 1259287714}
+  fourCross: {fileID: 1724237070}
+  fiveCheck: {fileID: 1638798446}
+  fiveCross: {fileID: 422997366}
+  sixCheck: {fileID: 783317758}
+  sixCross: {fileID: 1063719268}
 --- !u!114 &1429584550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3568,16 +3568,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   draggingItem: 0
   electronicsCan: {fileID: 0}
-  oneCheck: {fileID: 2015259402}
-  oneCross: {fileID: 779020474}
-  threeCheck: {fileID: 0}
-  threeCross: {fileID: 0}
-  fourCheck: {fileID: 0}
-  fourCross: {fileID: 0}
-  fiveCheck: {fileID: 0}
-  fiveCross: {fileID: 0}
-  sixCheck: {fileID: 0}
-  sixCross: {fileID: 0}
 --- !u!1 &1894041693
 GameObject:
   m_ObjectHideFlags: 0

@@ -969,7 +969,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 'Would you like to build everything you want and do crazy things with it?
-    Would you like to build rocket that go to the moon?
+    Would you like to build a rocket that goes to the moon?
 
     The Mechanical Engineering department at the TU/e offers you the opportunity to
     do so. Not only you will be able to build whatever you want after your bachelor,
@@ -1722,7 +1722,6 @@ GameObject:
   - component: {fileID: 1865645868}
   - component: {fileID: 1865645873}
   - component: {fileID: 1865645874}
-  - component: {fileID: 1865645875}
   - component: {fileID: 1865645876}
   m_Layer: 0
   m_Name: Main Camera
@@ -1902,19 +1901,6 @@ MonoBehaviour:
   fiveCross: {fileID: 0}
   sixCheck: {fileID: 0}
   sixCross: {fileID: 0}
---- !u!114 &1865645875
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1865645867}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd271a58d4e144452b654616fb5a5e21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas1: {fileID: 0}
-  canvas2: {fileID: 0}
 --- !u!114 &1865645876
 MonoBehaviour:
   m_ObjectHideFlags: 0

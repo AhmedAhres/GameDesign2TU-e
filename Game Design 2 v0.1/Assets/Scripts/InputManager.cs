@@ -7,11 +7,12 @@ public class InputManager : MonoBehaviour
 	public bool draggingItem = false;
 	private GameObject draggedObject;
 	private Vector2 touchOffset;
+	Scene scene;
 	public GameObject electronicsCan;
-	public GameObject oneCheck;
+	/*public GameObject oneCheck;
 	public GameObject oneCross;
-	GameObject twoCheck;
-	GameObject twoCross;
+	public GameObject twoCheck;
+	public GameObject twoCross;
 	public GameObject threeCheck;
 	public GameObject threeCross;
 	public GameObject fourCheck;
@@ -24,12 +25,12 @@ public class InputManager : MonoBehaviour
 	float lev1Time;
 	float lev2Time;
 	float elecTime;
-	float lev3Time;
+	float lev3Time;*/
 
 	void Start()
 	{
-		twoCheck = GameObject.Find("2Check");
-		twoCross = GameObject.Find("2Cross");
+		//twoCheck = GameObject.Find("2Check");
+		//twoCross = GameObject.Find("2Cross");
 		scene = SceneManager.GetActiveScene();
 	}
 
@@ -87,7 +88,7 @@ public class InputManager : MonoBehaviour
 		}
 		if (scene.name == "Level1") {
 			StartCoroutine (lev1 ());
-			lev1Time = Time.timeSinceLevelLoad;
+			//lev1Time = Time.timeSinceLevelLoad;
 			/*if (lev1Time <= 25f) {
 				oneCheck.gameObject.SetActive (true);
 			} else {
@@ -96,7 +97,7 @@ public class InputManager : MonoBehaviour
 		}
 		if (scene.name == "Level2") {
 			StartCoroutine (lev2 ());
-			lev2Time = Time.timeSinceLevelLoad;
+			//lev2Time = Time.timeSinceLevelLoad;
 			/*if (lev2Time <= 60)
 				twoCheck.gameObject.SetActive (true);
 			else {
@@ -105,7 +106,7 @@ public class InputManager : MonoBehaviour
 		}
 		if (scene.name == "Level3") {
 			StartCoroutine (lev3());
-			lev3Time = Time.timeSinceLevelLoad;
+			//lev3Time = Time.timeSinceLevelLoad;
 			/*if (lev3Time <= 60)
 				threeCheck.gameObject.SetActive (true);
 			else {
