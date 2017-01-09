@@ -88,29 +88,29 @@ public class InputManager : MonoBehaviour
 		if (scene.name == "Level1") {
 			StartCoroutine (lev1 ());
 			lev1Time = Time.timeSinceLevelLoad;
-			if (lev1Time <= 25f) {
+			/*if (lev1Time <= 25f) {
 				oneCheck.gameObject.SetActive (true);
 			} else {
 				oneCross.gameObject.SetActive (true);
-			}
+			}*/
 		}
 		if (scene.name == "Level2") {
 			StartCoroutine (lev2 ());
 			lev2Time = Time.timeSinceLevelLoad;
-			if (lev2Time <= 60)
+			/*if (lev2Time <= 60)
 				twoCheck.gameObject.SetActive (true);
 			else {
 				twoCross.gameObject.SetActive (true);
-			}
+			}*/
 		}
 		if (scene.name == "Level3") {
 			StartCoroutine (lev3());
 			lev3Time = Time.timeSinceLevelLoad;
-			if (lev3Time <= 60)
+			/*if (lev3Time <= 60)
 				threeCheck.gameObject.SetActive (true);
 			else {
 				threeCross.gameObject.SetActive (true);
-			}
+			}*/
 		}
 	}
 	
