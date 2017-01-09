@@ -4,9 +4,6 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 class Achievements : MonoBehaviour {
-
-
-
 	Scene scene;
 	public GameObject oneCheck;
 	public GameObject oneCross;
@@ -27,27 +24,30 @@ class Achievements : MonoBehaviour {
 
 	// Use this for initialization
 	void Awake () {
-		scene = SceneManager.GetActiveScene();
+		//scene = SceneManager.GetActiveScene();
 		DontDestroyOnLoad (this);
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		scene = SceneManager.GetActiveScene();
 		if (scene.name == "Achievements") {
-			this.gameObject.SetActive (true);
+			this.gameObject.GetComponent<Canvas> ().enabled = true;
 		}
+	}
 
+	void Finished(){
 		if (scene.name == "Circuit2") {
+			threeCross.gameObject.SetActive (false);
+			fourCross.gameObject.SetActive (false);
 			threeCheck.gameObject.SetActive (true);
 			elecTime = Time.timeSinceLevelLoad;
 			if (elecTime <= 60f) {
 				fourCheck.gameObject.SetActive (true);
-			} else fourCross.gameObject.SetActive (true);
+			} 
 
 		}
-		if (scene.name == "Circuit") {
-			threeCross.gameObject.SetActive (true);
-		}
+
 
 
 
