@@ -88,12 +88,7 @@ public class InputManager : MonoBehaviour
 			}
 		}
 		if (scene.name == "Level1") {
-<<<<<<< HEAD
-			StartCoroutine (lev1 ());
 			//lev1Time = Time.timeSinceLevelLoad;
-=======
-			lev1Time = Time.timeSinceLevelLoad;
->>>>>>> origin/master
 			/*if (lev1Time <= 25f) {
 				oneCheck.gameObject.SetActive (true);
 			} else {
@@ -102,12 +97,7 @@ public class InputManager : MonoBehaviour
 			StartCoroutine (lev1 ());
 		}
 		if (scene.name == "Level2") {
-<<<<<<< HEAD
-			StartCoroutine (lev2 ());
 			//lev2Time = Time.timeSinceLevelLoad;
-=======
-			lev2Time = Time.timeSinceLevelLoad;
->>>>>>> origin/master
 			/*if (lev2Time <= 60)
 				twoCheck.gameObject.SetActive (true);
 			else {
@@ -116,12 +106,7 @@ public class InputManager : MonoBehaviour
 			StartCoroutine (lev2 ());
 		}
 		if (scene.name == "Level3") {
-<<<<<<< HEAD
-			StartCoroutine (lev3());
 			//lev3Time = Time.timeSinceLevelLoad;
-=======
-			lev3Time = Time.timeSinceLevelLoad;
->>>>>>> origin/master
 			/*if (lev3Time <= 60)
 				threeCheck.gameObject.SetActive (true);
 			else {
