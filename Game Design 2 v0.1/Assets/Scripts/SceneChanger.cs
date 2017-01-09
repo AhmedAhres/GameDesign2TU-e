@@ -7,9 +7,10 @@ public class SceneChanger : MonoBehaviour {
 
 	public GameObject can1;
 	public GameObject end;
+	GameObject ach;
 	// Use this for initialization
 	void Start () {
-		
+		ach = GameObject.Find ("AchievementsCan");
 	}
 	
 	// Update is called once per frame
@@ -52,6 +53,7 @@ public class SceneChanger : MonoBehaviour {
 
 	public void ending(){
 		can1.gameObject.SetActive (false);
+		ach.gameObject.SetActive (false);
 		end.gameObject.SetActive (true);
 	}
 }
