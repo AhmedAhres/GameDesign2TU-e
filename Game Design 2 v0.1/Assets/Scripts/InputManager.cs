@@ -55,6 +55,7 @@ public class InputManager : MonoBehaviour
 			return Camera.main.ScreenToWorldPoint(Input.mousePosition);
 		}
 	}
+
 	private void DragOrPickUp()
 	{
 		var inputPosition = CurrentTouchPosition;
@@ -87,34 +88,53 @@ public class InputManager : MonoBehaviour
 			}
 		}
 		if (scene.name == "Level1") {
+<<<<<<< HEAD
 			StartCoroutine (lev1 ());
 			//lev1Time = Time.timeSinceLevelLoad;
+=======
+			lev1Time = Time.timeSinceLevelLoad;
+>>>>>>> origin/master
 			/*if (lev1Time <= 25f) {
 				oneCheck.gameObject.SetActive (true);
 			} else {
 				oneCross.gameObject.SetActive (true);
 			}*/
+			StartCoroutine (lev1 ());
 		}
 		if (scene.name == "Level2") {
+<<<<<<< HEAD
 			StartCoroutine (lev2 ());
 			//lev2Time = Time.timeSinceLevelLoad;
+=======
+			lev2Time = Time.timeSinceLevelLoad;
+>>>>>>> origin/master
 			/*if (lev2Time <= 60)
 				twoCheck.gameObject.SetActive (true);
 			else {
 				twoCross.gameObject.SetActive (true);
 			}*/
+			StartCoroutine (lev2 ());
 		}
 		if (scene.name == "Level3") {
+<<<<<<< HEAD
 			StartCoroutine (lev3());
 			//lev3Time = Time.timeSinceLevelLoad;
+=======
+			lev3Time = Time.timeSinceLevelLoad;
+>>>>>>> origin/master
 			/*if (lev3Time <= 60)
 				threeCheck.gameObject.SetActive (true);
 			else {
 				threeCross.gameObject.SetActive (true);
 			}*/
+			StartCoroutine (lev3());
 		}
 	}
 	
+	private void RobotFinished()
+	{
+		StartCoroutine(achiev());
+	}
 
 	IEnumerator lev1(){
 		yield return new WaitForSeconds (0.7f);
@@ -127,6 +147,10 @@ public class InputManager : MonoBehaviour
 	IEnumerator lev3(){
 		yield return new WaitForSeconds (0.7f);
 		SceneManager.LoadScene ("Level3Mini");
+	}
+	IEnumerator achiev(){
+		yield return new WaitForSeconds(0.7f);
+		SceneManager.LoadScene("Achievements");
 	}
 		
 

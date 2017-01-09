@@ -5072,6 +5072,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1600b167b557a544b86e7e0257e6e395, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelFinish: {fileID: 1865645867}
 --- !u!4 &1147046433
 Transform:
   m_ObjectHideFlags: 0
@@ -12345,8 +12346,6 @@ MonoBehaviour:
   electronicsCan: {fileID: 0}
   oneCheck: {fileID: 0}
   oneCross: {fileID: 0}
-  twoCheck: {fileID: 0}
-  twoCross: {fileID: 0}
   threeCheck: {fileID: 0}
   threeCross: {fileID: 0}
   fourCheck: {fileID: 0}
