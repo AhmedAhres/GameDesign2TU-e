@@ -10,28 +10,9 @@ public class InputManager : MonoBehaviour
 	Scene scene;
 	public GameObject electronicsCan;
 	public GameObject achievements;
-	/*public GameObject oneCheck;
-	public GameObject oneCross;
-	public GameObject twoCheck;
-	public GameObject twoCross;
-	public GameObject threeCheck;
-	public GameObject threeCross;
-	public GameObject fourCheck;
-	public GameObject fourCross;
-	public GameObject fiveCheck;
-	public GameObject fiveCross;
-	public GameObject sixCheck;
-	public GameObject sixCross;
-	Scene scene;
-	float lev1Time;
-	float lev2Time;
-	float elecTime;
-	float lev3Time;*/
 
 	void Start()
 	{
-		//twoCheck = GameObject.Find("2Check");
-		//twoCross = GameObject.Find("2Cross");
 		scene = SceneManager.GetActiveScene();
 		achievements = GameObject.Find ("AchievementsCan");
 	}
@@ -91,36 +72,19 @@ public class InputManager : MonoBehaviour
 		}
 		achievements.SendMessage ("Finished");
 		if (scene.name == "Level1") {
-			//lev1Time = Time.timeSinceLevelLoad;
-			/*if (lev1Time <= 25f) {
-				oneCheck.gameObject.SetActive (true);
-			} else {
-				oneCross.gameObject.SetActive (true);
-			}*/
 			StartCoroutine (lev1 ());
 		}
 		if (scene.name == "Level2") {
-			//lev2Time = Time.timeSinceLevelLoad;
-			/*if (lev2Time <= 60)
-				twoCheck.gameObject.SetActive (true);
-			else {
-				twoCross.gameObject.SetActive (true);
-			}*/
 			StartCoroutine (lev2 ());
 		}
 		if (scene.name == "Level3") {
-			//lev3Time = Time.timeSinceLevelLoad;
-			/*if (lev3Time <= 60)
-				threeCheck.gameObject.SetActive (true);
-			else {
-				threeCross.gameObject.SetActive (true);
-			}*/
 			StartCoroutine (lev3());
 		}
 	}
 	
 	private void RobotFinished()
 	{
+		achievements = GameObject.Find ("AchievementsCan");
 		achievements.SendMessage("Robot");
 		StartCoroutine(achiev());
 	}

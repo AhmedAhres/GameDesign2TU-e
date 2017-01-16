@@ -20,8 +20,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4000010060312798}
   - component: {fileID: 212000013458337930}
-  - component: {fileID: 60000010607099662}
   - component: {fileID: 50000013608549138}
+  - component: {fileID: 58092890963433644}
   m_Layer: 0
   m_Name: sack-place
   m_TagString: Sack
@@ -62,8 +62,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!60 &60000010607099662
-PolygonCollider2D:
+--- !u!58 &58092890963433644
+CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -74,27 +74,8 @@ PolygonCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
-  m_Points:
-    m_Paths:
-    - - {x: 0.13932323, y: 0.403559}
-      - {x: 0.28372526, y: 0.811615}
-      - {x: 0.21011114, y: 0.89043474}
-      - {x: 0.105819225, y: 0.92629045}
-      - {x: 0.081600666, y: 0.8994542}
-      - {x: 0.14858437, y: 0.85785383}
-      - {x: 0.13738203, y: 0.8136355}
-      - {x: -0.017213821, y: 0.51800424}
-      - {x: -0.4493227, y: -0.333559}
-      - {x: -0.5528817, y: -0.42067716}
-      - {x: -0.612205, y: -0.537118}
-      - {x: -0.6300001, y: -0.66932285}
-      - {x: -0.56288195, y: -0.7393228}
-      - {x: -0.5, y: -0.77288187}
-      - {x: -0.40423632, y: -0.7764409}
-      - {x: -0.31085062, y: -0.71661425}
-      - {x: -0.23651361, y: -0.62933695}
-      - {x: -0.13469791, y: -0.35}
-      - {x: 0.0004029274, y: 0.009798527}
+  serializedVersion: 2
+  m_Radius: 1.355
 --- !u!212 &212000013458337930
 SpriteRenderer:
   m_ObjectHideFlags: 1

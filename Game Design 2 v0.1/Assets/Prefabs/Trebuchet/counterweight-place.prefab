@@ -20,8 +20,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4000013436386638}
   - component: {fileID: 212000013017295654}
-  - component: {fileID: 61000011955719694}
   - component: {fileID: 50000013225296606}
+  - component: {fileID: 58612448231113100}
   m_Layer: 0
   m_Name: counterweight-place
   m_TagString: Counterweight
@@ -62,8 +62,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!61 &61000011955719694
-BoxCollider2D:
+--- !u!58 &58612448231113100
+CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -75,7 +75,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 0.53, y: 0.68}
+  m_Radius: 1.355
 --- !u!212 &212000013017295654
 SpriteRenderer:
   m_ObjectHideFlags: 1

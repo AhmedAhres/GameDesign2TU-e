@@ -20,8 +20,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4000012695068998}
   - component: {fileID: 212000014289301830}
-  - component: {fileID: 61000013776808814}
   - component: {fileID: 50000011114472466}
+  - component: {fileID: 58012576490556526}
   m_Layer: 0
   m_Name: bar-up-place
   m_TagString: Bar-up
@@ -62,8 +62,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!61 &61000013776808814
-BoxCollider2D:
+--- !u!58 &58012576490556526
+CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -71,11 +71,11 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 0.2, y: 2.49}
+  m_Radius: 1.355
 --- !u!212 &212000014289301830
 SpriteRenderer:
   m_ObjectHideFlags: 1

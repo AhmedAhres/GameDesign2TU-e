@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 114000011739654392}
   - component: {fileID: 60000010504916034}
   - component: {fileID: 82000012740618820}
+  - component: {fileID: 58459576899322742}
   m_Layer: 0
   m_Name: bar-left
   m_TagString: Tile
@@ -43,6 +44,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &58459576899322742
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012124745942}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.355
 --- !u!60 &60000010504916034
 PolygonCollider2D:
   m_ObjectHideFlags: 1
