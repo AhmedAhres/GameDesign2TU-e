@@ -1,12 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour {
 
+	public GameObject mainMenu;
+	public GameObject credits;
+	public GameObject achievements;
 	// Use this for initialization
 	void Start () 
 	{
+		/*
 		// set the desired aspect ratio (the values in this example are
 		// hard-coded for 16:9, but you could make them into public
 		// variables instead so you can set them at design time)
@@ -46,23 +51,37 @@ public class Menu : MonoBehaviour {
 
 			camera.rect = rect;
 		}
+		*/
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+
+	public void showMainMenu(){
+		mainMenu.SetActive(true);
+		credits.SetActive(false);
+		achievements.SetActive(false);
+	}
+
+	public void showCredits(){
+		mainMenu.SetActive(false);
+		credits.SetActive(true);
+		achievements.SetActive(false);
+	}
+
+	public void showAchievements(){
+		mainMenu.SetActive(false);
+		credits.SetActive(false);
+		achievements.SetActive(true);
 	}
 
 	public void goLevel1(){
-		Invoke ("changeLevel", 1.0f);
+		Invoke ("changeLevel", 0.2f);
 	}
 
 	void changeLevel(){
-		Application.LoadLevel("Level1");
+		SceneManager.LoadScene("Level1");
 	}
 
 	public void exitGame(){
-		Invoke ("exit", 1.0f);
+		Invoke ("exit", 0.2f);
 	}
 
 	void exit(){
