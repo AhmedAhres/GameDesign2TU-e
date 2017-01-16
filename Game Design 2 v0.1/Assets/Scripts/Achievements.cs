@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 class Achievements : MonoBehaviour {
+	public static Achievements achievementsInstance;
+
 	Scene scene;
 	public GameObject oneCheck;
 	public GameObject oneCross;
@@ -26,6 +28,12 @@ class Achievements : MonoBehaviour {
 	void Awake () {
 		//scene = SceneManager.GetActiveScene();
 		DontDestroyOnLoad (this);
+
+		if (achievementsInstance == null) {
+			achievementsInstance = this;
+		} else {
+			DestroyObject(gameObject);
+		}
 	}
 	
 	// Update is called once per frame

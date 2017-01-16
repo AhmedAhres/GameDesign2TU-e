@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ShowHint : MonoBehaviour {
-	
+
 	public GameObject lights;
 	public GameObject hints;
 	private bool hintsAreOn;
@@ -20,14 +20,20 @@ public class ShowHint : MonoBehaviour {
 		hints.SetActive (false);
 		hintsAreOn = false;
 	}
-	
+
+	void Update(){
+		if (Input.GetMouseButtonDown(0)) {
+			if (hintsAreOn) {
+				lights.SetActive(true);
+				hints.SetActive(false);
+				hintsAreOn = false;
+			}
+		}
+	}
+
 	// Update is called once per frame
 	void OnMouseDown(){
-		if (hintsAreOn) {
-			lights.SetActive (true);
-			hints.SetActive (false);
-			hintsAreOn = false;
-		} else {
+		if (!hintsAreOn) {
 			lights.SetActive (false);
 			hints.SetActive (true);
 			hintsAreOn = true;
