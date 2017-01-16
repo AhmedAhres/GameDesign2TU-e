@@ -35,6 +35,7 @@ TagManager:
   - Body
   - 2Check
   - 2Cross
+  - wrong
   layers:
   - Default
   - TransparentFX

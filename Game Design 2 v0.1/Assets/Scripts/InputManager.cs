@@ -52,7 +52,7 @@ public class InputManager : MonoBehaviour
 			if (touches.Length > 0)
 			{
 				var hit = touches[0];
-				if (hit.transform != null && hit.transform.tag == "Tile")
+				if (hit.transform != null && (hit.transform.tag == "Tile" || hit.transform.tag == "wrong"))
 				{
 					draggingItem = true;
 					draggedObject = hit.transform.gameObject;
