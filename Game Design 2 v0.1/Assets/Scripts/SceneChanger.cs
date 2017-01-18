@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class SceneChanger : MonoBehaviour {
 
-	public GameObject can1;
 	public GameObject end;
 	GameObject ach;
 	// Use this for initialization
@@ -52,7 +51,6 @@ public class SceneChanger : MonoBehaviour {
 	}
 
 	public void ending(){
-		can1.gameObject.SetActive (false);
 		ach.gameObject.SetActive (false);
 		end.gameObject.SetActive (true);
 	}
