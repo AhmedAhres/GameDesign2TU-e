@@ -69,8 +69,6 @@
      <Compile Include="Assets\Scripts\Menu\Menu.cs" />
      <Compile Include="Assets\Scripts\Pause.cs" />
      <Compile Include="Assets\Scripts\SceneChanger.cs" />
-     <Compile Include="Assets\Scripts\ShowCredits.cs" />
-     <Compile Include="Assets\Scripts\ShowOptions.cs" />
      <Compile Include="Assets\Scripts\Tile.cs" />
      <None Include="Assets\Fonts\Documentation\JazzCreateBubble_VersionHistory_1.1.txt" />
      <None Include="Assets\Plugins\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" />
