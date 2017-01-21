@@ -12,13 +12,12 @@ public class ShowHint : MonoBehaviour {
 		lights.SetActive (false);
 		hints.SetActive (true);
 		hintsAreOn = true;
-		Invoke ("initializeHints", 8.0f);
 	}
 
 	void initializeHints(){
-		lights.SetActive (true);
-		hints.SetActive (false);
-		hintsAreOn = false;
+		lights.SetActive (false);
+		hints.SetActive (true);
+		hintsAreOn = true;
 	}
 
 	void Update(){
@@ -34,9 +33,8 @@ public class ShowHint : MonoBehaviour {
 	// Update is called once per frame
 	void OnMouseDown(){
 		if (!hintsAreOn) {
-			lights.SetActive (false);
-			hints.SetActive (true);
-			hintsAreOn = true;
+			Debug.Log("help");
+			Invoke ("initializeHints", 0.1f);
 		}
 	}
 }
